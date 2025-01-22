@@ -17,6 +17,8 @@ glyph_mappings = {
     0x1F4F6: "icons/wifi.svg",
     0xE005: "icons/ram.svg",
     0xE006: "icons/cpu.svg",
+    0xE007: "icons/disk.svg",
+    0xE008: "icons/ethernet.svg",
 }
 
 for code_point, svg_path in glyph_mappings.items():
