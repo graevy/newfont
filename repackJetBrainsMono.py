@@ -24,7 +24,10 @@ for code_point, svg_path in glyph_mappings.items():
     glyph.importOutlines(svg_path)
     glyph.width = default_width
 
-# Save the modified font
-font.generate("JetBrainsMono-Regular-i3status.ttf")
+font.fontname = "JetBrainsMonoRegularBar"
+font.familyname = "JetBrainsMono"
+font.fullname = "JetBrainsMonoRegularBar"
+
+font.generate("JetBrainsMonoRegularBar.ttf")
 font.close()
 
