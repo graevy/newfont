@@ -25,6 +25,9 @@ for code_point, svg_path in glyph_mappings.items():
     glyph = font.createChar(code_point)
     glyph.importOutlines(svg_path)
     glyph.width = default_width
+    bearing = abs(int(glyph.width - glyph.boundingBox()[2]) //2 ))
+    glyph.left_side_bearing = bearing
+    glyph.right_side_bearing = bearing 
 
 font.fontname = "JetBrainsMonoRegularBar"
 font.familyname = "JetBrainsMono"
