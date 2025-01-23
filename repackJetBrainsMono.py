@@ -30,6 +30,7 @@ glyph_mappings = {
     0xE00B: "icons/cpu.svg",
     0xE00C: "icons/disk.svg",
     0xE00D: "icons/ethernet.svg",
+    0xE00E: "icons/brightness.svg",
 }
 
 for code_point, svg_path in glyph_mappings.items():
