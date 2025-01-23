@@ -2,8 +2,7 @@
 
 pkgs.mkShell {
   buildInputs = [
-    pkgs.python3Full
+    pkgs.python3
     pkgs.fontforge
-    pkgs.python312Packages.pillow
   ];
 }

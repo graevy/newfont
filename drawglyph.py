@@ -1,3 +1,6 @@
+# pinning everything to python 312 yields some build errors i won't bother with
+# just nix-shell -p pkgs.python312 pkgs.python312Packages.pillow if you want to use this
+
 from PIL import Image, ImageDraw, ImageFont
 
 font_path = "JetBrainsMonoRegularBar.ttf"
